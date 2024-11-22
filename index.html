@@ -65,15 +65,50 @@
             animation: gradient 15s ease infinite;
             z-index: 0;
         }
+        .bubble {
+            position: absolute;
+            bottom: -100px;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            animation: rise 10s infinite ease-in-out;
+        }
+        .bubble:nth-child(2) {
+            width: 60px;
+            height: 60px;
+            left: 25%;
+            animation-duration: 12s;
+        }
+        .bubble:nth-child(3) {
+            width: 80px;
+            height: 80px;
+            left: 50%;
+            animation-duration: 14s;
+        }
+        .bubble:nth-child(4) {
+            width: 50px;
+            height: 50px;
+            left: 75%;
+            animation-duration: 16s;
+        }
         @keyframes gradient {
             0% { background-position: 0% 50%; }
             50% { background-position: 100% 50%; }
             100% { background-position: 0% 50%; }
         }
+        @keyframes rise {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-100vh); }
+        }
     </style>
 </head>
 <body>
     <div class="background"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
     <header>
         <h1>SEDA - Homepage</h1>
     </header>
