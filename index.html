@@ -1,160 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sq">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shërbimet e Përkthimit Gjyqësor</title>
+    <title>Shërbime Përkthimi</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #000000;
-            color: #ffffff;
-            overflow-x: hidden;
+            background-color: #f4f4f4;
         }
         header {
-            background-color: #000000;
-            color: #ffffff;
-            padding: 20px;
-            text-align: center;
-            z-index: 2;
-            position: relative;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #333333;
-            z-index: 2;
-            position: relative;
-        }
-        nav a {
-            color: #ffffff;
-            padding: 14px 20px;
-            text-decoration: none;
+            background-color: #333;
+            color: #fff;
+            padding: 1rem 0;
             text-align: center;
         }
-        nav a:hover {
-            background-color: #555555;
+        main {
+            padding: 2rem;
         }
-        .container {
-            padding: 20px;
-            position: relative;
-            z-index: 2;
+        h1, h2 {
+            color: #333;
         }
-        .section {
-            background-color: #1a1a1a;
-            margin: 20px 0;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background-color: #fff;
+            margin: 0.5rem 0;
+            padding: 0.5rem;
+            border: 1px solid #ddd;
         }
         footer {
-            background-color: #000000;
-            color: #ffffff;
+            background-color: #333;
+            color: #fff;
             text-align: center;
-            padding: 10px 0;
-            z-index: 2;
-            position: relative;
-        }
-        .background {
+            padding: 1rem 0;
             position: fixed;
-            top: 0;
-            left: 0;
             width: 100%;
-            height: 100%;
-            background: linear-gradient(45deg, #ff00ff, #0000ff);
-            background-size: 400% 400%;
-            animation: gradient 15s ease infinite;
-            z-index: 0;
-        }
-        .bubble {
-            position: absolute;
-            bottom: -100px;
-            width: 40px;
-            height: 40px;
-            background-color: rgba(255, 255, 255, 0.2);
-            border-radius: 50%;
-            animation: rise 10s infinite ease-in-out;
-        }
-        .bubble:nth-child(2) {
-            width: 60px;
-            height: 60px;
-            left: 25%;
-            animation-duration: 12s;
-        }
-        .bubble:nth-child(3) {
-            width: 80px;
-            height: 80px;
-            left: 50%;
-            animation-duration: 14s;
-        }
-        .bubble:nth-child(4) {
-            width: 50px;
-            height: 50px;
-            left: 75%;
-            animation-duration: 16s;
-        }
-        @keyframes gradient {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
-        @keyframes rise {
-            0% { transform: translateY(0); }
-            100% { transform: translateY(-100vh); }
+            bottom: 0;
         }
     </style>
 </head>
 <body>
-    <div class="background"></div>
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-    <div class="bubble"></div>
     <header>
-        <h1>Shërbimet e Përkthimit Gjyqësor</h1>
+        <h1>Shërbime Përkthimi Profesionale</h1>
     </header>
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
-    </nav>
-    <div class="container">
-        <div id="home" class="section">
-            <h2>Home</h2>
-            <p>Keni nevojë për përkthime të sakta dhe profesionale të dokumenteve ligjore nga frëngjishtja në shqip dhe anasjelltas? Ne ofrojmë shërbime përkthimi të besueshme për të gjitha nevojat tuaja ligjore dhe mediatike.</p>
-        </div>
-        <div id="about" class="section">
-            <h2>About</h2>
-            <p>Ne ofrojmë një gamë të plotë shërbimesh përkthimi për të përmbushur të gjitha nevojat tuaja. Ofrimi ynë përfshin:</p>
+    <main>
+        <section id="services">
+            <h2>Shërbimet Tona</h2>
+            <p>Keni nevojë për përkthime të sakta dhe profesionale të dokumenteve ligjore nga frëngjishtja në shqip dhe anasjelltas, shërbime përkthimi të besueshme për të gjitha nevojat tuaja ligjore dhe mediatike.</p>
+            <p>Ne ofrojmë një gamë të plotë shërbimesh përkthimi për të përmbushur të gjitha nevojat tuaja, duke përfshirë:</p>
             <ul>
-                <li>Përkthime ligjore, duke përfshirë dokumente ligjore, kontrata dhe vendime gjyqësore.</li>
-                <li>Përkthime mjekësore si raportet mjekësore, udhëzimet e përkthimit dhe fletpalosjet farmaceutike.</li>
-                <li>Përkthime teknike duke mbuluar manuale teknike, udhëzimet e transportit dhe dokumentacionin teknik për marketing.</li>
-                <li>Përkthime të materialeve reklamuese, broshura dhe rrjete sociale.</li>
-                <li>Përkthime mediatike, filma dhe dokumentarë.</li>
-                <li>Përkthime administrative duke përfshirë dokumente qeveritare, formularë dhe korrespondencë zyrtare.</li>
-                <li>Përkthime të etiketave të ushqimeve, duke ofruar informacion mbi të dhënat dhe udhëzimet për përdorim.</li>
+                <li>Përkthime ligjore: dokumente ligjore, kontrata dhe vendime gjyqësore.</li>
+                <li>Përkthime mjekësore: raporte mjekësore, udhëzime dhe fletpalosje farmaceutike.</li>
+                <li>Përkthime teknike: manuale teknike, udhëzime transporti dhe dokumentacion teknik për marketing.</li>
+                <li>Përkthime reklamuese: materiale reklamuese, broshura dhe rrjete sociale.</li>
+                <li>Përkthime mediatike: filma dhe dokumentarë.</li>
+                <li>Përkthime administrative: dokumente qeveritare, formularë dhe korrespondencë zyrtare.</li>
+                <li>Përkthime të etiketave të ushqimeve: informacion mbi të dhënat dhe udhëzimet për përdorim.</li>
             </ul>
-        </div>
-        <div id="services" class="section">
-            <h2>Services</h2>
-            <div>
-                <h3>Shikoni Videon Tonë</h3>
-                <iframe src="https://drive.google.com/file/d/1AGu8omIAMBTbVvJYgWNuTi5gy47yBOrr/preview" width="640" height="480" allow="autoplay"></iframe>
-            </div>
-        </div>
-        <div id="contact" class="section">
-            <h2>Contact</h2>
-            <p>Për më shumë informacion ose për të kërkuar një shërbim përkthimi, ju lutemi kontaktoni:</p>
-            <p>Email: <a href="mailto:murati.arjanit@gmail.com" style="color: #ff00ff;">murati.arjanit@gmail.com</a></p>
-            <p>Telefon: <a href="tel:+38345569246" style="color: #ff00ff;">+383 45 569 246</a></p>
-        </div>
-    </div>
+        </section>
+        <section id="contact">
+            <h2>Kontaktoni</h2>
+            <p>Për më shumë informacion, kontaktoni: <a href="mailto:murati.arianit@gmail.com">murati.arianit@gmail.com</a> ose telefononi në <a href="tel:+38345569246">+383 45 569 246</a>.</p>
+        </section>
+        <section id="video">
+            <h2>Video</h2>
+            <iframe src="https://drive.google.com/file/d/1AGu8omIAMBTbVvJYgWNuTi5gy47yBOrr/preview" width="640" height="480" allow="autoplay"></iframe>
+        </section>
+    </main>
     <footer>
-        <p>&copy; 2024 Shërbimet e Përkthimit Gjyqësor. Të gjitha të drejtat e rezervuara.</p>
+        <p>&copy; 2024 Shërbime Përkthimi Profesionale. Të gjitha të drejtat e rezervuara.</p>
     </footer>
 </body>
 </html>
