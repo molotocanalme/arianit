@@ -64,9 +64,9 @@
         .moving-object {
             position: absolute;
             top: 50%;
-            left: 0;
-            width: 50px;
-            height: 50px;
+            left: 50%;
+            width: 100px;
+            height: 100px;
             background-color: #00ffcc; /* Ngjyra e objektit */
             border-radius: 50%;
             animation: moveObject 5s linear infinite;
@@ -76,8 +76,9 @@
             100% { background-position: 100% 50%; }
         }
         @keyframes moveObject {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(100vw); }
+            0% { transform: translate(-50%, -50%) translateX(0); }
+            50% { transform: translate(-50%, -50%) translateX(200px); }
+            100% { transform: translate(-50%, -50%) translateX(0); }
         }
         section {
             padding: 20px 0;
