@@ -1,3 +1,5 @@
+# Create the HTML content with the specified styles
+html_content = """
 <!DOCTYPE html>
 <html lang="sq">
 <head>
@@ -29,7 +31,7 @@
             padding: 0;
         }
         li {
-            background-color: #8A2BE2; /* Sfond violet i errët i ndezur për elementet e listës */
+            background-color: #000; /* Sfond i zi për elementet e listës */
             margin: 0.5rem 0;
             padding: 0.5rem;
             border: none; /* Pa kufij */
@@ -78,3 +80,10 @@
     </footer>
 </body>
 </html>
+"""
+
+# Write the HTML content to index.html
+with open("index.html", "w") as file:
+    file.write(html_content)
+
+print("The index.html file has been created successfully.")
