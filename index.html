@@ -6,16 +6,17 @@
     <title>Shërbime Përkthimi</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #e0f7fa; /* Blu e qelët */
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #f0f0f0;
             margin: 0;
             padding: 0;
-            text-align: center; /* Vendos të gjitha të dhënat në qendër */
+            color: #333;
         }
         header {
-            background-color: #4CAF50;
+            background-color: #333;
             color: white;
             padding: 1em 0;
+            text-align: center;
         }
         .container {
             width: 80%;
@@ -27,11 +28,10 @@
         }
         .card {
             background: white;
-            padding: 1em;
-            margin: 1em auto;
+            padding: 2em;
+            margin: 1em 0;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            display: inline-block;
-            width: 80%;
+            border-radius: 8px;
         }
         footer {
             background-color: #333;
@@ -43,7 +43,7 @@
             width: 100%;
         }
         button {
-            background-color: #4CAF50;
+            background-color: #333;
             color: white;
             border: none;
             padding: 10px 20px;
@@ -53,10 +53,21 @@
             font-size: 16px;
             margin: 4px 2px;
             cursor: pointer;
+            border-radius: 4px;
         }
         .video-container {
             text-align: center;
             margin: 2em 0;
+        }
+        h2 {
+            color: #333;
+        }
+        a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -81,7 +92,7 @@
             <div class="card">
                 <h2>Kontaktoni</h2>
                 <p>Për më shumë informacion ose për të kërkuar një ofertë, ju lutem kontaktoni në:</p>
-                <p>Email: <a href="mailto:murati.arianit@gmail.com">murati.arianit@gmail.com</a></p>
+                <p>Email: <a href="mailto:shembull@shembull.com">shembull@shembull.com</a></p>
                 <button onclick="alert('Faleminderit që na kontaktuat!')">Na Kontaktoni</button>
             </div>
         </section>
