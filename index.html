@@ -42,14 +42,7 @@
             position: relative;
             z-index: 2;
         }
-        .service {
-            background-color: #1a1a1a;
-            margin: 20px 0;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-        }
-        .contact {
+        .section {
             background-color: #1a1a1a;
             margin: 20px 0;
             padding: 20px;
@@ -123,18 +116,18 @@
         <h1>Shërbimet e Përkthimit Gjyqësor</h1>
     </header>
     <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Contact</a>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
     </nav>
     <div class="container">
-        <div class="service">
-            <h2>Përkthime të Sakta dhe Profesionale</h2>
+        <div id="home" class="section">
+            <h2>Home</h2>
             <p>Keni nevojë për përkthime të sakta dhe profesionale të dokumenteve ligjore nga frëngjishtja në shqip dhe anasjelltas? Ne ofrojmë shërbime përkthimi të besueshme për të gjitha nevojat tuaja ligjore dhe mediatike.</p>
         </div>
-        <div class="service">
-            <h2>Gama e Plotë e Shërbimeve të Përkthimit</h2>
+        <div id="about" class="section">
+            <h2>About</h2>
             <p>Ne ofrojmë një gamë të plotë shërbimesh përkthimi për të përmbushur të gjitha nevojat tuaja. Ofrimi ynë përfshin:</p>
             <ul>
                 <li>Përkthime ligjore, duke përfshirë dokumente ligjore, kontrata dhe vendime gjyqësore.</li>
@@ -145,16 +138,19 @@
                 <li>Përkthime administrative duke përfshirë dokumente qeveritare, formularë dhe korrespondencë zyrtare.</li>
                 <li>Përkthime të etiketave të ushqimeve, duke ofruar informacion mbi të dhënat dhe udhëzimet për përdorim.</li>
             </ul>
+        </div>
+        <div id="services" class="section">
+            <h2>Services</h2>
             <div>
                 <h3>Shikoni Videon Tonë</h3>
                 <iframe src="https://drive.google.com/file/d/1AGu8omIAMBTbVvJYgWNuTi5gy47yBOrr/preview" width="640" height="480" allow="autoplay"></iframe>
             </div>
         </div>
-        <div class="contact">
-            <h2>Kontaktoni</h2>
+        <div id="contact" class="section">
+            <h2>Contact</h2>
             <p>Për më shumë informacion ose për të kërkuar një shërbim përkthimi, ju lutemi kontaktoni:</p>
-            <p>Email: <a href="mailto:murati.arjanit@gmail.com" style="color: #ff00ff;">murati.arianit@gmail.com</a></p>
-            <p>Telefoni: <a href="tel:+38345569246" style="color: #ff00ff;">+383 45 569 246</a></p>
+            <p>Email: <a href="mailto:murati.arjanit@gmail.com" style="color: #ff00ff;">murati.arjanit@gmail.com</a></p>
+            <p>Telefon: <a href="tel:+38345569246" style="color: #ff00ff;">+383 45 569 246</a></p>
         </div>
     </div>
     <footer>
