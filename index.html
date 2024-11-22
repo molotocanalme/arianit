@@ -18,7 +18,7 @@
             padding: 1rem 0;
             text-align: center;
             position: relative;
-            z-index: 2; /* Sigurohuni që të jetë mbi topin lëvizës */
+            z-index: 2; /* Sigurohuni që të jetë mbi logon lëvizëse */
         }
         main {
             padding: 2rem;
@@ -26,7 +26,7 @@
             flex-direction: column;
             align-items: center;
             position: relative;
-            z-index: 2; /* Sigurohuni që të jetë mbi topin lëvizës */
+            z-index: 2; /* Sigurohuni që të jetë mbi logon lëvizëse */
         }
         section {
             width: 80%;
@@ -55,20 +55,21 @@
             text-align: center;
             padding: 1rem 0;
             position: relative;
-            z-index: 2; /* Sigurohuni që të jetë mbi topin lëvizës */
+            z-index: 2; /* Sigurohuni që të jetë mbi logon lëvizëse */
         }
-        .ball {
+        .logo {
             position: fixed;
             top: 50%;
             left: 50%;
-            width: 50px;
-            height: 50px;
-            background-color: #8A2BE2; /* Ngjyrë violet e përzier me të zezë */
-            border-radius: 50%;
-            animation: ball-animation 5s linear infinite alternate; /* Lëvizje më e shpejtë */
+            width: 100px;
+            height: 100px;
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/4e/Microsoft_365_%282022%29.svg'); /* Logo e Office 365 */
+            background-size: contain;
+            background-repeat: no-repeat;
+            animation: logo-animation 5s linear infinite alternate; /* Lëvizje më e shpejtë */
             z-index: 1; /* Sigurohuni që të jetë nën tekstin dhe seksionet */
         }
-        @keyframes ball-animation {
+        @keyframes logo-animation {
             0% { transform: translate(-50%, -50%) scale(1); }
             100% { transform: translate(50%, 50%) scale(1.5); }
         }
@@ -119,8 +120,8 @@
         <p>&copy; 2024 Shërbime Përkthimi Profesionale. Të gjitha të drejtat e rezervuara.</p>
     </footer>
 
-    <!-- Moving ball object -->
-    <div class="ball"></div>
+    <!-- Moving logo object -->
+    <div class="logo"></div>
 
     <!-- Side bars -->
     <div class="side-bar left"></div>
