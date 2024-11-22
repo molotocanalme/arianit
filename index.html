@@ -11,7 +11,6 @@
             padding: 0;
             background-color: #000; /* Sfond i zi */
             color: #fff; /* Tekst i bardhë */
-            overflow: hidden; /* Për të fshehur shiritin e lëvizjes */
         }
         header {
             background-color: #8A2BE2; /* Sfond violet i errët i ndezur */
@@ -65,12 +64,18 @@
             height: 200%;
             background-color: #8A2BE2; /* Ngjyrë violet e përzier me të zezë */
             border-radius: 50%;
-            animation: wave-animation 20s linear infinite alternate;
+            animation: wave-animation 10s linear infinite alternate; /* Lëvizje më e shpejtë */
             z-index: 1; /* Sigurohuni që të jetë nën tekstin dhe seksionet */
         }
         @keyframes wave-animation {
             0% { transform: translate(-50%, -50%) scale(1); }
             100% { transform: translate(-50%, -50%) scale(1.5); }
+        }
+        .wave.middle {
+            top: calc(50% - 100px); /* Pozicionimi në mes të faqes */
+        }
+        .wave.bottom {
+            top: calc(100% - 200px); /* Pozicionimi në fund të faqes */
         }
         .side-bar {
             position: fixed;
@@ -119,8 +124,10 @@
         <p>&copy; 2024 Shërbime Përkthimi Profesionale. Të gjitha të drejtat e rezervuara.</p>
     </footer>
 
-    <!-- Moving wave object -->
+    <!-- Moving wave objects -->
     <div class="wave"></div>
+    <div class="wave middle"></div>
+    <div class="wave bottom"></div>
 
     <!-- Side bars -->
     <div class="side-bar left"></div>
