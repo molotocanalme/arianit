@@ -3,10 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shërbime Përkthimi Profesionale</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Shërbime Përkthimi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000; /* Sfond i zi */
+            color: #fff; /* Tekst i bardhë */
+        }
+        header {
+            background-color: #8A2BE2; /* Sfond violet i errët i ndezur */
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        main {
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        section {
+            width: 80%;
+            margin: 1rem 0;
+            padding: 1rem;
+            background-color: #000; /* Sfond i zi */
+            border-radius: 8px;
+        }
+        h1, h2 {
+            color: #fff; /* Tekst i bardhë */
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background-color: #000; /* Sfond i zi për elementet e listës */
+            margin: 0.5rem 0;
+            padding: 0.5rem;
+            border: none; /* Pa kufij */
+        }
+        footer {
+            background-color: #8A2BE2; /* Sfond violet i errët i ndezur */
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        .gradient {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, #8A2BE2, #000, #8A2BE2);
+            background-size: 400% 400%;
+            animation: gradient-animation 15s ease infinite;
+            z-index: -1; /* Sigurohuni që të jetë nën tekstin dhe seksionet */
+        }
+        @keyframes gradient-animation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+    </style>
 </head>
 <body>
+    <div class="gradient"></div> <!-- Moving gradient background -->
     <header>
         <h1>Shërbime Përkthimi Profesionale</h1>
     </header>
@@ -14,6 +77,7 @@
         <section id="services">
             <h2>Shërbimet Tona</h2>
             <p>Keni nevojë për përkthime të sakta dhe profesionale të dokumenteve ligjore nga frëngjishtja në shqip dhe anasjelltas, shërbime përkthimi të besueshme për të gjitha nevojat tuaja ligjore dhe mediatike.</p>
+            <p>Ne ofrojmë një gamë të plotë shërbimesh përkthimi për të përmbushur të gjitha nevojat tuaja, duke përfshirë:</p>
             <ul>
                 <li>Përkthime ligjore: dokumente ligjore, kontrata dhe vendime gjyqësore.</li>
                 <li>Përkthime mjekësore: raporte mjekësore, udhëzime dhe fletpalosje farmaceutike.</li>
@@ -26,70 +90,16 @@
         </section>
         <section id="contact">
             <h2>Kontaktoni</h2>
-            <p>Për më shumë informacion, kontaktoni: <a href="mailto:murati.arianit@gmail.com">murati.arianit@gmail.com</a> ose telefononi në +383 45 569 246.</p>
+            <p>Për më shumë informacion, kontaktoni: <a href="mailto:murati.arianit@gmail.com">murati.arianit@gmail.com</a> ose telefononi në <a href="tel:+38345569246">+383 45 569 246</a>.</p>
         </section>
         <section id="video">
             <h2>Video</h2>
-            <!-- Video embed code -->
+            <iframe src="https://drive.google.com/file/d/1AGu8omIAMBTbVvJYgWNuTi5gy47yBOrr/preview" width="640" height="480" allow="autoplay"></iframe>
         </section>
     </main>
     <footer>
-        <p>© 2024 Shërbime Përkthimi Profesionale. Të gjitha të drejtat e rezervuara.</p>
+        <p>&copy; 2024 Shërbime Përkthimi Profesionale. Të gjitha të drejtat e rezervuara.</p>
     </footer>
+
 </body>
 </html>
-CSS: Stilet për dizajnin e faqes.
-/* styles.css */
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 1em 0;
-    text-align: center;
-}
-
-main {
-    padding: 2em;
-}
-
-h1, h2 {
-    color: #4CAF50;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-ul li {
-    background: #e0e0e0;
-    margin: 0.5em 0;
-    padding: 0.5em;
-    border-radius: 5px;
-}
-
-a {
-    color: #4CAF50;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 1em 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
