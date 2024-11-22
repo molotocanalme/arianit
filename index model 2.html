@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shërbime Përkthimi Profesionale</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #8a2be2; /* Sfondi violet i ndezur */
+            color: #fff; /* Teksti i bardhë */
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #000; /* Sfondi i zi */
+            color: #fff; /* Teksti i bardhë */
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #8a2be2 3px solid; /* Ngjyra violet e ndezur */
+        }
+        header a {
+            color: #fff; /* Teksti i bardhë */
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header li {
+            float: left;
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        .showcase {
+            min-height: 400px;
+            background: url('background.jpg') no-repeat 0 -400px;
+            text-align: center;
+            color: #fff; /* Teksti i bardhë */
+        }
+        .showcase h1 {
+            margin-top: 100px;
+            font-size: 55px;
+            margin-bottom: 10px;
+        }
+        .showcase p {
+            font-size: 20px;
+        }
+        .animate-fade {
+            animation: fadeIn 2s;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        section {
+            padding: 20px 0;
+        }
+        footer {
+            background: #000; /* Sfondi i zi */
+            color: #fff; /* Teksti i bardhë */
+            text-align: center;
+            padding: 10px 0;
+        }
+        .highlight {
+            color: #ffcc00; /* Ngjyra e dukshme dhe koherente me sfondin */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>Shërbime Përkthimi Profesionale</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#sherbimet">Shërbimet</a></li>
+                    <li><a href="#kontaktoni">Kontaktoni</a></li>
+                    <li><a href="#video">Video</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="showcase animate-fade">
+        <div class="container">
+            <h1>Mirë se vini në Shërbime Përkthimi Profesionale</h1>
+            <p>Ofrojmë përkthime profesionale dhe të sakta për të gjitha nevojat tuaja.</p>
+        </div>
+    </section>
+
+    <section id="sherbimet" class="container">
+        <h2>Shërbimet Tona</h2>
+        <div class="video-container">
+            <iframe src="https://drive.google.com/file/d/1AGu8omIAMBTbVvJYgWNuTi5gy47yBOrr/preview" width="640" height="480" allow="autoplay"></iframe>
+        </div>
+    </section>
+
+    <section id="kontaktoni" class="container">
+        <h2>Kontaktoni</h2>
+        <p>Për më shumë informacion, kontaktoni: <a href="mailto:murati.arianit@gmail.com" class="highlight">murati.arianit@gmail.com</a> ose telefononi në <span class="highlight">+383 45 569 246</span>.</p>
+    </section>
+
+    <section id="video" class="container">
+        <h2>Video</h2>
+        <p>Shikoni videon tonë për të mësuar më shumë rreth shërbimeve tona.</p>
+    </section>
+
+    <footer>
+        <p>© 2024 Shërbime Përkthimi Profesionale. Të gjitha të drejtat e rezervuara.</p>
+    </footer>
+</body>
+</html>
