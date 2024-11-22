@@ -27,7 +27,7 @@
         header h1 {
             margin: 0;
             font-size: 2.5em;
-            color: #00ffcc; /* Ngjyra e ndryshuar për tekstin */
+            color: #fff; /* Teksti i bardhë */
         }
         nav ul {
             padding: 0;
@@ -51,7 +51,7 @@
             text-align: center;
             background: linear-gradient(90deg, #000428, #004e92); /* Gradient i zi në kaltër futuriste */
             color: #fff; /* Teksti i bardhë */
-            animation: fadeIn 2s;
+            animation: backgroundMove 10s linear infinite;
         }
         .showcase h1 {
             font-size: 3em;
@@ -60,9 +60,9 @@
         .showcase p {
             font-size: 1.5em;
         }
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
+        @keyframes backgroundMove {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
         }
         section {
             padding: 20px 0;
